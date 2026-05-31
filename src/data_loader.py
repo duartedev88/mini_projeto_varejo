@@ -3,7 +3,6 @@ data_loader.py
 
 Responsável pela leitura do arquivo CSV
 e exibição das informações iniciais da base.
-
 """
 
 import pandas as pd
