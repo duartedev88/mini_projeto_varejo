@@ -4,7 +4,6 @@ data_loader.py
 Responsável pela leitura do arquivo CSV
 e exibição das informações iniciais da base.
 
-Autor: Tiago Silva Duarte
 """
 
 import pandas as pd
@@ -20,8 +19,6 @@ class DataLoader:
         """
         Recebe o caminho do arquivo CSV.
 
-        Exemplo:
-        Base Varejo.csv
         """
         self.file_path = file_path
 
