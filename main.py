@@ -1,6 +1,8 @@
 from src.data_loader import DataLoader
 from src.data_cleaner import DataCleaner
 from src.statistics import StatisticsAnalyzer
+from src.grouping import GroupingAnalyzer
+
 # ==========================================
 # CARREGAMENTO
 # ==========================================
@@ -44,3 +46,17 @@ stats = StatisticsAnalyzer(cleaner.df)
 stats.children_statistics()
 
 stats.describe_children()
+
+# ==========================================
+# AGRUPAMENTOS
+# ==========================================
+
+grouping = GroupingAnalyzer(cleaner.df)
+
+grouping.sales_by_gender()
+
+grouping.sales_by_category()
+
+grouping.sales_by_marital_status()
+
+grouping.gender_vs_category()
