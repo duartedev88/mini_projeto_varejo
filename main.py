@@ -1,6 +1,6 @@
 from src.data_loader import DataLoader
 from src.data_cleaner import DataCleaner
-
+from src.statistics import StatisticsAnalyzer
 # ==========================================
 # CARREGAMENTO
 # ==========================================
@@ -34,3 +34,13 @@ cleaner.remove_duplicates()
 cleaner.remove_invalid_dates()
 
 cleaner.save_clean_data()
+
+# ==========================================
+# ESTATÍSTICAS
+# ==========================================
+
+stats = StatisticsAnalyzer(cleaner.df)
+
+stats.children_statistics()
+
+stats.describe_children()
