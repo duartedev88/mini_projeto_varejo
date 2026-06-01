@@ -2,6 +2,7 @@ from src.data_loader import DataLoader
 from src.data_cleaner import DataCleaner
 from src.statistics import StatisticsAnalyzer
 from src.grouping import GroupingAnalyzer
+from src.report import ReportGenerator
 
 # ==========================================
 # CARREGAMENTO
@@ -60,3 +61,31 @@ grouping.sales_by_category()
 grouping.sales_by_marital_status()
 
 grouping.gender_vs_category()
+
+# ==========================================
+# AGRUPAMENTOS
+# ==========================================
+
+grouping = GroupingAnalyzer(cleaner.df)
+
+gender_group = grouping.sales_by_gender()
+
+category_group = grouping.sales_by_category()
+
+marital_group = grouping.sales_by_marital_status()
+
+grouping.gender_vs_category()
+
+# ==========================================
+# RELATÓRIO FINAL
+# ==========================================
+
+report = ReportGenerator(
+    cleaner.df,
+    gender_group,
+    category_group,
+    marital_group
+)
+
+report.generate_report()
+
