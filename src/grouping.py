@@ -114,7 +114,7 @@ class GroupingAnalyzer:
     def gender_vs_category(self):
         """
         Cruza gênero e categoria.
-        utilização de pivot_table().
+
         """
 
         print("\n" + "=" * 60)
