@@ -318,4 +318,4 @@ Consulte o repositório ou o mantenedor do projeto para informações de licenci
 
 ## Autor
 
-Projeto desenvolvido no contexto de **Tiago Duarte** — módulo de dados e Python.
+Projeto desenvolvido por **Tiago Duarte** — módulo de dados e Python .
